@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CSS Animation - Delay e Iteration-Count</title>
+    <title>CSS Animation - Direction</title>
     <style>
         .ball {
             width: 100px;
@@ -11,9 +11,10 @@
             position: relative;
 
             animation-name: example-two; /* dizer o nome da animação que vai acontecer */
-            animation-duration: 10s;
+            animation-duration: 5s;
             animation-delay: 2s; /* faz a bolinha demorar pra sair */
-            animation-iteration-count: 2; /* avisa quantas vezes a animação vai acontecer (o delay não é aplicado aqui) */
+            animation-iteration-count: infinite; /* avisa quantas vezes a animação vai acontecer (o delay não é aplicado aqui) */
+            animation-direction: alternate; /* só funciona com o iteration-count */
         }
 
         @keyframes example-one {
